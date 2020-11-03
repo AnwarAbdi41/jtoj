@@ -1,0 +1,49 @@
+{% extends 'companions/base.html' %}
+{% block body_block %}
+{% load staticfiles %}
+<div class="container">
+  <div class="jumbotron">
+    <h4 className="TextCentre" >Heres a list of the top 10 companions that were promised Jannah</h4>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <a href="{% url 'companions:first_companion' %}"><img height="250" width="250" src="{% static 'companions/img/abubakr.png' %}" alt="Abu Bakr" /></a>
+        </div>
+        <div class="col">
+          <a href="{% url 'companions:second_companion' %}"><img  height="250" width="250"src="{% static 'companions/img/Umar.png' %}" alt="Umar" /></a>
+        </div>
+        <div class="col">
+          <a href="{% url 'companions:third_companion' %}"><img height="250" width="250" src="{% static 'companions/img/uthman.png' %}" alt="Uthman" /></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a href="{% url 'companions:fourth_companion' %}"><img  height="250" width="250"src="{% static 'companions/img/Ali.png' %}" alt="Ali" /></a>
+        </div>
+        <div class="col">
+          <a href="{% url 'companions:fifth_companion' %}"><img  height="250" width="250" src="{% static 'companions/img/talhah.png' %}" alt="Talhah" /></a>
+        </div>
+        <div class="col">
+          <a href="{% url 'companions:sixth_companion' %}"><img  height="250" width="250" src="{% static 'companions/img/Zubayr.png' %}" alt="Zubayr" /></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a href="{% url 'companions:seventh_companion' %}"><img  height="250" width="250" src="{% static 'companions/img/AbdurRahman.png' %}" alt="Abdu-Rahman bin Awf" /></a>
+        </div>
+        <div class="col">
+          <a href="{% url 'companions:eighth_companion' %}"><img  height="250" width="250" src="{% static 'companions/img/Saad.png' %}" alt="Sa'ad bin Abi Waqqas" /></a>
+        </div>
+        <div class="col">
+          <a href="{% url 'companions:ninth_companion' %}"><img  height="250" width="250" src="{% static 'companions/img/Said.png' %}" alt="Sa'id bin Zayd" /></a>
+        </div>
+      </div>
+      <div class="row">
+        <div clas="col">
+          <a href="{% url 'companions:tenth_companion' %}"><img  height="250" width="250" src="{% static 'companions/img/AbuUbaidah.png' %}" alt="Abu Ubaidah bin Al-Jarrah" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

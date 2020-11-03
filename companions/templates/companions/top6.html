@@ -1,0 +1,12 @@
+{% extends 'companions/base.html' %}
+{% block body_block %}
+{% load staticfiles %}
+<div class="container">
+  <div class="jumbotron">
+    <h4> Here are the top 6 things you need to do to get to the highest in Paradise </h4>
+    <audio>
+      <source src="{% static 'companions/audio/paradise.mp3' %}" type="audio/mpeg">
+    </audio>
+  </div>
+</div>
+{% endblock %}

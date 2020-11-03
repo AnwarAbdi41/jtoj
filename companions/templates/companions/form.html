@@ -1,0 +1,13 @@
+{% extends 'companions/base.html' %}
+{% block content %}
+    <div>
+        <form role="form" action="{% url 'login' %}" method='POST'>
+          {% csrf_token %}
+          <h1>Welcome back!</h1>
+          {% if user.is_authenticated %}
+            <h2> Welcome {{user.username}} </h2>
+          {% else %}
+            <button>Login</button>
+        </form>
+    </div>
+{% endblock content %}
